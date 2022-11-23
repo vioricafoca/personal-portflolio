@@ -5,9 +5,8 @@
 
 @media screen and (max-width: 600px) {
   img {
-    float: none;
-    width: 40%;
-    padding: 10px 20px;
+  display: block;
+  width: 100%;
   }
 }
 
@@ -21,10 +20,21 @@
   border-radius: 5px;
   background: seashell;
 }
-
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  margin: 10px 20px;
+  padding: 85px;
+  border-radius: 5px;
+  background: seashell;
+}
 .nav > ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   position: fixed;
   top: 0;
   left: 0;
@@ -33,10 +43,12 @@
   list-style-type: none;
   background-color: #ffff;
 }
+li {
+  margin: 5px 20px 5px 20px;
+}
 
 .project-title {
   font-size: 25px;
-  margin: 0;
   padding: 10px;
   width: content-box;
   text-align: center;
@@ -50,8 +62,6 @@ a {
 p {
   display: flow;
   text-align: center;
-  margin: 0;
-  padding: 0;
   color: #475153;
 }
 
@@ -70,6 +80,7 @@ h1 {
   font-size: 30px;
   font-family: monospace;
   font-weight: 70;
+  margin-top: 100px;
 }
 
 .project-header {
@@ -81,8 +92,9 @@ h1 {
 }
 
 .photo-profile {
-  width: 65%;
-  background-color: white;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
 }
@@ -91,10 +103,9 @@ h1 {
   max-width: 100%;
   display: grid;
   width: 100%;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 30px;
-  grid-row-gap: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    margin: 0 auto;
 }
 
 .project-image {
