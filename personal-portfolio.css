@@ -10,8 +10,6 @@
   }
 }
 
-vioricaaaaaaaaaaaa
-
 .container {
   display: flex;
   flex-direction: column;
@@ -37,14 +35,16 @@ vioricaaaaaaaaaaaa
 .nav > ul {
   display: flex;
   justify-content: flex-end;
-  position: fixed;
+  position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
   padding: 20px;
   list-style-type: none;
   background-color: #ffff;
+  z-index: 1000; 
 }
+
 li {
   margin: 5px 20px 5px 20px;
 }
@@ -185,4 +185,15 @@ h2 {
   margin-top: 70px;
   flex-wrap: wrap;
   text-justify: newspaper;
+}
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--main-red);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
 }
