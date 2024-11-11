@@ -15,10 +15,10 @@
   justify-content: center;
   align-items: center;
   margin: 10px 20px;
-  padding: 85px;
+  padding: 20px;
   border-radius: 5px;
   background: seashell;
-  min-height: 100vh; /* Make container take full viewport height */
+  min-height: 100vh; 
 }
 
 #welcome-section {
@@ -29,14 +29,13 @@
   width: 100%;
   min-height: 100vh;
   margin: 10px 20px;
-  padding: 85px;
   border-radius: 5px;
   background: seashell;
 }
 
 .photo-profile {
   width: 100%;
-  max-width: 300px; /* Center and control the size of hero image */
+  max-width: 300px;
   height: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
   margin: 25px auto;
@@ -113,7 +112,7 @@ h1 {
 .project-image {
   width: 100%;
   object-fit: cover;
-  height: 300px; /* Ensures cards are uniform in height */
+  height: 300px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
